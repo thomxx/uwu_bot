@@ -1,19 +1,20 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-const px = 'uwu';
+let px = 'uwu ';
+let guildname = message.guild.name;
 
 client.once('ready', () => {
 	console.log('Ready!')	
 })
 
 client.on('message', message => {
-	if (message.content === '${px} hi') {
+	if (message.content === px'hi') {
 	message.channel.send('Hello! uwu');
-} else if (message.content === '${px} hello') {
+} else if (message.content === px'hello') {
 	message.channel.send('Hi! uwu');
 } else if (message.content === 'uwu server') {
-	message.channel.send('You are currently on ${message.guild.name}')
+	message.channel.send('You are currently on 'guildname )
 }
 });
 	
