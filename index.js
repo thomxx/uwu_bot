@@ -18,11 +18,7 @@ client.on('message', message => {
 } else if (message.content === (px) + ' uwu') {
 	message.channel.send('uwu')
 }
-       
-});
 
-client.on('message', message => {
-	
 var sender = message.author;
 
 if (!userData[sender.id]) userData[sender.id] = {
@@ -34,6 +30,7 @@ userData[sender.id].messagesSent++;
 fs.writeFile('Storage/userData.json', JSON.stringify(userData), err => {
 	if (err) console.error(err);
 });
+
 
 })
 
