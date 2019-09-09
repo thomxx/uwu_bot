@@ -10,7 +10,7 @@ client.on('message', message => {
 	message.channel.send('Hello! uwu');
 } else if (message.content === 'uwu hello') {
 	message.channel.send('Hi! uwu');
-} else if (message.content === 'uwu') {
+} else if (message.content === 'uwu uwu') {
 	message.channel.send('uwu')
 }
 });
