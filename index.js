@@ -8,11 +8,11 @@ client.once('ready', () => {
 var px = 'uwu'
 //very messy code but it's okay as long as it works! :>
 client.on('message', message => {
-	if (message.content === (px)) {
+	if (message.content === (px)' hi') {
 	message.channel.send('Hello! uwu');
-} else if (message.content === 'uwu hello') {
+} else if (message.content === (px)' hello') {
 	message.channel.send('Hi! uwu');
-} else if (message.content === 'uwu uwu') {
+} else if (message.content === (px)' uwu') {
 	message.channel.send('uwu')
 } 
 });
