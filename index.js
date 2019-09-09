@@ -10,8 +10,8 @@ client.on('message', message => {
 	message.channel.send('Hello! uwu');
 } else if (message.content === 'uwu hello') {
 	message.channel.send('Hi! uwu');
-} else if (message.content === 'uwu server') {
-	message.channel.send({message.guild.memberCount})
+} else if (message.content === 'uwu') {
+	message.channel.send('uwu')
 }
 });
 	
