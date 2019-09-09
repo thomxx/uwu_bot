@@ -1,5 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+var fs = require('fs');
+
+var userData = JSON.parse(fs.readFileSync('Storage/userData.json', 'utf8'));
 
 client.once('ready', () => {
 	console.log('Ready!')	
@@ -17,7 +20,15 @@ client.on('message', message => {
 }
        
 });
-	
 
+if (!userData[sender.id]) userData[sender.id] = {
+	messagesSent: 0
+}
+	
+userData[sender.id].messagesSent++;
+
+fs.writeFile('Storage/userData.json', JSON.stringify(userData), err => {
+	if (err) console.error(err);
+});
 
 client.login(process.env.BOT_TOKEN);
