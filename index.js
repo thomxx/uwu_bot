@@ -7,7 +7,7 @@ var userData = JSON.parse(fs.readFileSync('Storage/userData.json'));
 client.once('ready', () => {
 	console.log('Ready!')	
 })
-dasdnakd aodmosamdaoda
+
 var px = 'uwu'
 //very messy code but it's okay as long as it works! :>
 client.on('message', message => {
