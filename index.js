@@ -4,6 +4,8 @@ var fs = require('fs');
 
 var userData = JSON.parse(fs.readFileSync('Storage/userData.json', 'utf8'));
 
+var sender = message.author;
+
 client.once('ready', () => {
 	console.log('Ready!')	
 })
