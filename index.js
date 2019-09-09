@@ -25,7 +25,6 @@ client.on('message', message => {
                 .setColor('0x40FF08')
                 .setFooter('This bot is retarded. -Pasas1345');
             message.channel.send(statsembed);
-            break;
 }
 });
 	
