@@ -4,8 +4,6 @@ var fs = require('fs');
 
 var userData = JSON.parse(fs.readFileSync('Storage/userData.json', 'utf8'));
 
-var sender = message.author;
-
 client.once('ready', () => {
 	console.log('Ready!')	
 })
@@ -23,6 +21,10 @@ client.on('message', message => {
        
 });
 
+bot.on('message', message => {
+	
+var sender = message.author;
+
 if (!userData[sender.id]) userData[sender.id] = {
 	messagesSent: 0
 }
@@ -32,5 +34,7 @@ userData[sender.id].messagesSent++;
 fs.writeFile('Storage/userData.json', JSON.stringify(userData), err => {
 	if (err) console.error(err);
 });
+
+})
 
 client.login(process.env.BOT_TOKEN);
