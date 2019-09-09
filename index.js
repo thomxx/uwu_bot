@@ -5,6 +5,7 @@ client.once('ready', () => {
 	console.log('Ready!')	
 })
 
+//very messy code but it's okay as long as it works! :>
 client.on('message', message => {
 	if (message.content === 'uwu hi') {
 	message.channel.send('Hello! uwu');
@@ -12,7 +13,7 @@ client.on('message', message => {
 	message.channel.send('Hi! uwu');
 } else if (message.content === 'uwu uwu') {
 	message.channel.send('uwu')
-}
+} 
 });
 	
 
