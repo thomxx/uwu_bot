@@ -8,6 +8,8 @@ client.once('ready', () => {
 client.on('message', message => {
 	if (message.content === 'uwu hi') {
 	message.channel.send('Hello! uwu');
+} else if (message.content === 'uwu hello') {
+	message.channel.send('Hi! uwu');
 }
 });
 	
