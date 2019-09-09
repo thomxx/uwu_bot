@@ -10,7 +10,7 @@ var px = 'uwu'
 client.on('message', message => {
 	if (message.content === 'uwu hi') {
 	message.channel.send('Hello! uwu');
-} else if (message.content === (px)" hello") {
+} else if (message.content === (px) + 'hello') {
 	message.channel.send('Hi! uwu');
 } else if (message.content === 'uwu uwu') {
 	message.channel.send('uwu')
