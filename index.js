@@ -10,6 +10,8 @@ client.on('message', message => {
 	message.channel.send('Hello! uwu');
 } else if (message.content === 'uwu hello') {
 	message.channel.send('Hi! uwu');
+} else if (message.content === 'uwu server') {
+	message.channel.send('You are currently on "${message.guild.name}"')
 }
 });
 	
