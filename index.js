@@ -20,8 +20,6 @@ client.on('message', message => {
                 .setTitle('Your Stats')
                 .addField('Profile Name:', message.author.username)
                 .addField('Your Level:', '1')
-                .addField("Current Server I\'m on:", message.guild.name)
-                .addField('Version:', version)
                 .setColor('0x40FF08')
                 .setFooter('This bot is retarded. -Pasas1345');
             message.channel.send(statsembed);
