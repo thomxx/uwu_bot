@@ -10,6 +10,10 @@ client.once('ready', () => {
 client.on('message', message => {
 	if (message.content === '${prefix} hi')) {
 	message.channel.send('Hello! uwu');
+} else if (message.content === `${prefix}ping`) {
+	message.channel.send('Pong.');
+} else if (message.content === `${prefix}beep`) {
+	message.channel.send('Boop.');
 } else if (message.content === 'uwu hello') {
 	message.channel.send('Hi! uwu');
 } else if (message.content === 'uwu uwu') {
