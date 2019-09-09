@@ -21,7 +21,7 @@ client.on('message', message => {
        
 });
 
-bot.on('message', message => {
+client.on('message', message => {
 	
 var sender = message.author;
 
