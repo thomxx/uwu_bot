@@ -14,16 +14,8 @@ client.on('message', message => {
 	message.channel.send('Hi! uwu');
 } else if (message.content === (px) + ' uwu') {
 	message.channel.send('uwu')
-} else if (message.channel.send === (px) + ' profile') {
-        const statsembed = new Discord.RichEmbed()
-                .setThumbnail(message.author.avatarURL)
-                .setTitle('Your Stats')
-                .addField('Profile Name:', message.author.username)
-                .addField('Your Level:', '1')
-                .setColor('0x40FF08')
-                .setFooter('This bot is retarded. -Pasas1345');
-            message.channel.send(statsembed);
 }
+       
 });
 	
 
