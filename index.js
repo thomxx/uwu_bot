@@ -8,7 +8,7 @@ client.once('ready', () => {
 
 //very messy code but it's okay as long as it works! :>
 client.on('message', message => {
-	if (message.content === 'uwu hi') {
+	if (message.content === '${prefix} hi') {
 	message.channel.send('Hello! uwu');
 } else if (message.content === 'uwu hello') {
 	message.channel.send('Hi! uwu');
